@@ -125,11 +125,6 @@ class Horario(webapp2.RequestHandler):
         datos = {
             'actividades': actividades
 
-            # 'gym':gym
-            # "usr_name":nombre,
-            # "usuarios":Usuario.query().order(-Usuario.momento),
-            # "login_url":login_logout_url
-            # "usr":usr
 
         }
         jinja = jinja2.get_jinja2(app=self.app)
@@ -150,20 +145,12 @@ class Horario(webapp2.RequestHandler):
         datos = {
             'actividades':actividades
 
-            #'gym':gym
-            #"usr_name":nombre,
-            #"usuarios":Usuario.query().order(-Usuario.momento),
-            #"login_url":login_logout_url
-            #"usr":usr
+
 
 
         }
         jinja = jinja2.get_jinja2(app=self.app)
         self.response.write(jinja.render_template("horario.html", **datos))
-        #if usr:
-         #   email = usr.email()
-        #else:
-         #   email = "anonymous@anonymous.com"
 
 class Apuntar(webapp2.RequestHandler):
 
@@ -189,12 +176,6 @@ class Apuntar(webapp2.RequestHandler):
 
 
 
-
-            # 'gym':gym
-            # "usr_name":nombre,
-            # "usuarios":Usuario.query().order(-Usuario.momento),
-            # "login_url":login_logout_url
-            # "usr":usr
 
         }
 
