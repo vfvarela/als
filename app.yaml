@@ -11,8 +11,7 @@ handlers:
 
 - url: .*
   script: handlers.main.app
-- url: /index\.html
-  script: templates.app
+
 libraries:
 - name: webapp2
   version: "2.5.2"
